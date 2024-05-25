@@ -24,6 +24,7 @@ length(frases_palavras[[3]])
 
 length(frases_palavras[[4]])
 sapply(frases_palavras, length)
+getRversion() #4.2.1
 
 #https://programminghistorian.org/pt/licoes/processamento-basico-texto-r
 #https://www.tidyverse.org/blog/2019/04/r-version-support/
