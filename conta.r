@@ -937,7 +937,7 @@ table(palavras)
 install.packages("xlsReadwrite")
 library(xlsReadWrite)
 write.xls(mydata, "c:/arquivo.xls")
-write.table(palavras, file="ArquivoDadosExportados.csv", sep="\t")
+write.table(palavras, file="ArquivoDadosExportados.csv", sep="\t") #linha em que exporta o arquivo
 
 
 getwd()
