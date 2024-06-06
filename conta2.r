@@ -23,6 +23,8 @@ aldeiavitoria$Texto
 aldeiavitoria[duplicated(aldeiavitoria)]
 exdf <- as.data.frame(Arquivo)
 
+saida=inner_join(Ald_aVitPerguntas$Column1.1,Ald_aVitPerguntas$Column1.2)
+
 # Retornando como vetor:
 exdf[duplicated(Arquivo), ]
 
@@ -122,7 +124,7 @@ library(tidyr) # lendo tidyr
 
 palavras <- untidy %>% 
   separate("palavras", # coluna a ser separada
-           sep = " ", # o que separa uma observação de outra
+           sep = " ", # o que separa uma observa??o de outra
            into = Arquivo$palavras, # novas colunas
            convert = TRUE) # converter o nome da coluna para 'character'
 
@@ -140,50 +142,50 @@ as.data.frame(table(aldeiavitoria$Texto))
 as.data.frame(aldeiavitoria)
 table(exdf)
 
-Arquivo$palavras[2]="raízes"
+Arquivo$palavras[2]="ra?zes"
 Arquivo$palavras[2]
-Arquivo$palavras[3]="aí"
+Arquivo$palavras[3]="a?"
 Arquivo$palavras[3]
-Arquivo$palavras[15]="Árvore"
+Arquivo$palavras[15]="?rvore"
 Arquivo$palavras[15]
-Arquivo$palavras[16]="tá"
+Arquivo$palavras[16]="t?"
 Arquivo$palavras[16]
-Arquivo$palavras[27]="Árvore"
-Arquivo$palavras[39]="não"
-Arquivo$palavras[41]="ibirapó"
-Arquivo$palavras[42]="é"
-Arquivo$palavras[46]="países"
-Arquivo$palavras[49]="então"
-Arquivo$palavras[53]="não"
-Arquivo$palavras[55]="não"
-Arquivo$palavras[62]="então"
-Arquivo$palavras[63]="é"
-Arquivo$palavras[65]="nós"
-Arquivo$palavras[70]="tá"
-Arquivo$palavras[71]="é"
-Arquivo$palavras[76]="crença"
-Arquivo$palavras[83]="nós"
-Arquivo$palavras[91]="está"
-Arquivo$palavras[99]="espécie"
-Arquivo$palavras[101]="transcrição"
-Arquivo$palavras[108]= "categorização"
-Arquivo$palavras[115]= "gráficos"
-Arquivo$palavras[120]= "é"
-Arquivo$palavras[122]= "é"
-Arquivo$palavras[123]= "né"
-Arquivo$palavras[131]= "intervenção"
-Arquivo$palavras[133]= "não"
-Arquivo$palavras[136]= "gráfico"
-Arquivo$palavras[139]="não"
-Arquivo(Arquivo[which(Arquivo$palavras[149]="é" && Arquivo$palavras[151]="documentário"])]
-Arquivo <- Arquivo[ which( Arquivo$palavras[149]="é" | Arquivo$palavras[151]="documentário"]) , ]
-Arquivo[Arquivo$palavras[149]='é']
+Arquivo$palavras[27]="?rvore"
+Arquivo$palavras[39]="n?o"
+Arquivo$palavras[41]="ibirap?"
+Arquivo$palavras[42]="?"
+Arquivo$palavras[46]="pa?ses"
+Arquivo$palavras[49]="ent?o"
+Arquivo$palavras[53]="n?o"
+Arquivo$palavras[55]="n?o"
+Arquivo$palavras[62]="ent?o"
+Arquivo$palavras[63]="?"
+Arquivo$palavras[65]="n?s"
+Arquivo$palavras[70]="t?"
+Arquivo$palavras[71]="?"
+Arquivo$palavras[76]="cren?a"
+Arquivo$palavras[83]="n?s"
+Arquivo$palavras[91]="est?"
+Arquivo$palavras[99]="esp?cie"
+Arquivo$palavras[101]="transcri??o"
+Arquivo$palavras[108]= "categoriza??o"
+Arquivo$palavras[115]= "gr?ficos"
+Arquivo$palavras[120]= "?"
+Arquivo$palavras[122]= "?"
+Arquivo$palavras[123]= "n?"
+Arquivo$palavras[131]= "interven??o"
+Arquivo$palavras[133]= "n?o"
+Arquivo$palavras[136]= "gr?fico"
+Arquivo$palavras[139]="n?o"
+Arquivo(Arquivo[which(Arquivo$palavras[149]="?" && Arquivo$palavras[151]="document?rio"])]
+Arquivo <- Arquivo[ which( Arquivo$palavras[149]="?" | Arquivo$palavras[151]="document?rio"]) , ]
+Arquivo[Arquivo$palavras[149]='?']
 
- Arquivo$palavras[151]="documentário"
- Arquivo$palavras[149]="é"
+ Arquivo$palavras[151]="document?rio"
+ Arquivo$palavras[149]="?"
  solution<-as.data.frame(table(unlist(aldeiavitoria3)))
  table(solution)
- teste=read.csv("C:\\Users\\natan\\OneDrive\\Área de Trabalho\\aldeia vitória - apresentação.csv", sep = ";", header = T)
+ teste=read.csv("C:\\Users\\natan\\OneDrive\\?rea de Trabalho\\aldeia vit?ria - apresenta??o.csv", sep = ";", header = T)
 ?read.csv
 
 df1= data.frame(table(aldeiavitoria3$Column1.1))
