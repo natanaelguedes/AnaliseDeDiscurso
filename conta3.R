@@ -9,6 +9,8 @@ table(Ald_aVitPerguntas)
 apply(Ald_aVitPerguntas)
 df1= data.frame(table(Ald_aVitPerguntas$Column1.1))
 df1
+write.csv(df1,"testes1.csv")
+
 df2= data.frame(table(Ald_aVitPerguntas$Column1.2))
 df2
 df3= data.frame(table(Ald_aVitPerguntas$Column1.3))
