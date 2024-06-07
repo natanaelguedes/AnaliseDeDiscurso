@@ -132,6 +132,64 @@ data <- dataff.Var1[-1, ] # deleta a primeira linha
 library(dplyr)
 data4 = slice(dataf, -1)       # vem todas as linhas menos a linha 3
 data4
+X19demai0937Apresentação_$Column1.4[3]=""
+X19demai0937Apresentação_    
+
+X19demai0937Apresentação_$Column1.4[7]=""
+X19demai0937Apresentação_    
+
+X19demai0937Apresentação_$Column1.4[8]=""
+X19demai0937Apresentação_    
+X19demai0937Apresentação_$Column1.4[24]=""
+X19demai0937Apresentação_    
+
+
+X19demai0937Apresentação_$Column1.3[24]=""
+X19demai0937Apresentação_
+
+X19demai0937Apresentação_$Column1.5[2]=""
+X19demai0937Apresentação_
+  
+
+X19demai0937Apresentação_$Column1.5[7]=""
+X19demai0937Apresentação_
+
+X19demai0937Apresentação_$Column1.5[8]=""
+X19demai0937Apresentação_
+
+
+
+X19demai0937Apresentação_$Column1.6[9]=""
+X19demai0937Apresentação_
+
+
+X19demai0937Apresentação_$Column1.6[7]=""
+X19demai0937Apresentação_
+
+
+X19demai0937Apresentação_$Column1.7[1]=""
+X19demai0937Apresentação_
+
+
+X19demai0937Apresentação_$Column1.7[2]=""
+X19demai0937Apresentação_
+
+
+X19demai0937Apresentação_$Column1.7[3]=""
+X19demai0937Apresentação_
+
+
+X19demai0937Apresentação_$Column1.7[7]=""
+X19demai0937Apresentação_
+
+
+X19demai0937Apresentação_$Column1.7[8]=""
+data4=X19demai0937Apresentação_
+data4
+write.csv(data4,"dataframe19maio.csv")
+
+getwd()
+
 # df50= data.frame(table(Ald_aVitPerguntas$Column1.50))
 # df51= data.frame(table(Ald_aVitPerguntas$Column1.51))
 # df52= data.frame(table(Ald_aVitPerguntas$Column1.52))
@@ -216,3 +274,55 @@ a
 ibrary(dplyr)
 
 select(Aldeia_Vitória_Perguntas$Column1.1,Aldeia_Vitória_Perguntas$Column1.2)
+
+
+
+
+library(conflicted)  
+
+conflict_prefer("filter", "dplyr")
+conflict_prefer("lag", "dplyr")
+
+library(tidyverse)
+l1=list(data4)
+df_final <- list(l1) %>% 
+  reduce(full_join, by = "data")
+
+table(data.frame(l1))
+l1[1]
+glimpse(data4)
+
+d1= transpose(data4) 
+d1
+na.omit(d1)
+data=X19demai0937Apresentação_[, colSums(is.na(X19demai0937Apresentação_.Col)) == '']
+
+data
+table
+
+
+
+library ('plyr')
+data_table <- data.frame(X19demai0937Apresentação_$Column1.1  )
+
+
+
+print ("Original DataFrame")
+print (data_table)
+print ("Count of value per column")
+
+# count number of c in each column
+ldply(data_table, function(c) sum(c =="bom dia"))
+X19demai0937Apresentação_
+str(X19demai0937Apresentação_)
+head(dataframe19maio)
+
+
+data.frame(Apresentacao)
+Apresentacao=  read.table(text = txt, header = TRUE)
+
+apply(Apresentacao, 0, sum)
+data_frame(Apresentacao)
+tibble(Apresentacao)
+head.matrix(Apresentacao,n=10)
+Apresentacao[grep("e", Apresentacao$V1),]
