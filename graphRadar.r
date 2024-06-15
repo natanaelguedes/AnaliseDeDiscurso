@@ -1,6 +1,7 @@
 install.packages("radarchart")
 devtools::install_github("MangoTheCat/radarchart")
 
+#run in version r 4.2.1
 library(radarchart)
 
 labs <- c("Communicator", "Data Wangler", "Programmer",
