@@ -4,10 +4,10 @@ from math import pi
 
 # Set data
 df = pd.DataFrame({
-    'group': ['Gráfico'],
-    'Diversidade de expressões culturais artística ': [44],
-    'Espiritualidade': [77],
-    'Saberes locais': [82]
+    'group': ['A', 'B', 'C', 'D'],
+    'diversidade de expressoes culturais artisticas': [44,0,0,0],
+    'espiritualidade': [77, 0, 0, 0],
+    'saberes locais': [82, 0, 0, 0]
 })
 
 # ------- PART 1: Create background
@@ -32,8 +32,8 @@ plt.xticks(angles[:-1], categories)
 
 # Draw ylabels
 ax.set_rlabel_position(0)
-plt.yticks([10, 20, 30,40,50,60,70,80,90,100], ["10", "20", "30","40","50","60","70","80","90","100"], color="grey", size=7)
-plt.ylim(0, 100)
+plt.yticks([10, 20, 30,40,50,60,70,80,90,100], ["10", "20", "30","40","50","60","70","80","94","100"], color="grey", size=7)
+plt.ylim(0, 85)
 
 # ------- PART 2: Add plots
 
@@ -45,15 +45,93 @@ values = df.loc[0].drop('group').values.flatten().tolist()
 values += values[:1]
 ax.plot(angles, values, linewidth=1, linestyle='solid', label="Sistema de crenças")
 ax.fill(angles, values, 'b', alpha=0.1)
-
+#
 # # Ind2
+# values = df.loc[1].drop('group').values.flatten().tolist()
+# values += values[:1]
+# ax.plot(angles, values, linewidth=1, linestyle='solid', label="group B")
+# ax.fill(angles, values, 'r', alpha=0.1)
+#
+# # Ind3
+#
+# values = df.loc[1].drop('group').values.flatten().tolist()
+# values += values[:1]
+# ax.plot(angles, values, linewidth=1, linestyle='solid', label="group B")
+# ax.fill(angles, values, 'r', alpha=0.1)
+#
+# # Ind4
+#
+#
+# values = df.loc[1].drop('group').values.flatten().tolist()
+# values += values[:1]
+# ax.plot(angles, values, linewidth=1, linestyle='solid', label="group B")
+# ax.fill(angles, values, 'r', alpha=0.1)
+#
+#
+# # Ind5
+#
+#
+# values = df.loc[1].drop('group').values.flatten().tolist()
+# values += values[:1]
+# ax.plot(angles, values, linewidth=1, linestyle='solid', label="group B")
+# ax.fill(angles, values, 'r', alpha=0.1)
+#
+#
+# # Ind6
+#
+#
+# values = df.loc[1].drop('group').values.flatten().tolist()
+# values += values[:1]
+# ax.plot(angles, values, linewidth=1, linestyle='solid', label="group B")
+# ax.fill(angles, values, 'r', alpha=0.1)
+#
+#
+# # Ind7
+#
+#
+# values = df.loc[1].drop('group').values.flatten().tolist()
+# values += values[:1]
+# ax.plot(angles, values, linewidth=1, linestyle='solid', label="group B")
+# ax.fill(angles, values, 'r', alpha=0.1)
+#
+#
+# # Ind8
+#
+#
+# values = df.loc[1].drop('group').values.flatten().tolist()
+# values += values[:1]
+# ax.plot(angles, values, linewidth=1, linestyle='solid', label="group B")
+# ax.fill(angles, values, 'r', alpha=0.1)
+
+
+# Ind9
+
+#
+# values = df.loc[1].drop('group').values.flatten().tolist()
+# values += values[:1]
+# ax.plot(angles, values, linewidth=1, linestyle='solid', label="group B")
+# ax.fill(angles, values, 'r', alpha=0.1)
+
+
+# Ind11
+#
+#
+# values = df.loc[1].drop('group').values.flatten().tolist()
+# values += values[:1]
+# ax.plot(angles, values, linewidth=1, linestyle='solid', label="group B")
+# ax.fill(angles, values, 'r', alpha=0.1)
+#
+
+# Ind12
+
+#
 # values = df.loc[1].drop('group').values.flatten().tolist()
 # values += values[:1]
 # ax.plot(angles, values, linewidth=1, linestyle='solid', label="group B")
 # ax.fill(angles, values, 'r', alpha=0.1)
 
 # Add legend
-plt.legend(loc='upper right', bbox_to_anchor=(0.1, 0.1))
+plt.legend(loc='right', bbox_to_anchor=(-0.10, 0.1))
 
 # Show the graph
 plt.show()
