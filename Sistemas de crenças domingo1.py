@@ -5,11 +5,9 @@ from math import pi
 # Set data
 df = pd.DataFrame({
     'group': ['A', 'B', 'C', 'D'],
-    'dancas': [14,0,0,0],
-    'var2': [29, 10, 9, 34],
-    'var3': [8, 39, 23, 24],
-    'var4': [7, 31, 33, 14],
-    'var5': [28, 15, 32, 14]
+    'diversidade de expressoes culturais artisticas': [44,0,0,0],
+    'espiritualidade': [77, 0, 0, 0],
+    'saberes locais': [82, 0, 0, 0]
 })
 
 # ------- PART 1: Create background
@@ -34,7 +32,7 @@ plt.xticks(angles[:-1], categories)
 
 # Draw ylabels
 ax.set_rlabel_position(0)
-plt.yticks([10, 20, 30,40,50,60,70,80,84], ["10", "20", "30","40","50","60","70","80","84"], color="grey", size=7)
+plt.yticks([10, 20, 30,40,50,60,70,80,90,100], ["10", "20", "30","40","50","60","70","80","94","100"], color="grey", size=7)
 plt.ylim(0, 85)
 
 # ------- PART 2: Add plots
