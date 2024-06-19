@@ -5,9 +5,12 @@ from math import pi
 # Set data
 df = pd.DataFrame({
     'group': ['A', 'B', 'C', 'D'],
-    'Danças': [10,0,0,0],
-    'Cantos': [11, 0, 0, 0],
-    'Artesanatos': [23, 0, 0, 0]
+    'Medicina indigena': [2,0,0,0],
+    'Parteiras': [1, 0, 0, 0],
+    'Rezadeiras/ benzedoras': [8, 0, 0, 0],
+    'Símbolos de proteção':[13,0,0,0],
+    'Valorizacao da oralidade e saberes ancestrais':[28,0,0,0],
+    'Valorizacao dos sinais da natureza':[43,0,0,0]
 })
 
 # ------- PART 1: Create background
@@ -32,8 +35,8 @@ plt.xticks(angles[:-1], categories)
 
 # Draw ylabels
 ax.set_rlabel_position(0)
-plt.yticks([10, 20, 30,40,50,60,70,80,90,100], ["10", "20", "30","40","50","60","70","80","94","100"], color="grey", size=7)
-plt.ylim(0, 85)
+plt.yticks([10, 20, 30,40,50,60,70,80], ["10", "20", "30","40","50","60","70","80"], color="grey", size=7)
+plt.ylim(0, 50)
 
 # ------- PART 2: Add plots
 
@@ -43,8 +46,8 @@ plt.ylim(0, 85)
 # Ind1
 values = df.loc[0].drop('group').values.flatten().tolist()
 values += values[:1]
-ax.plot(angles, values, linewidth=1, linestyle='solid', label="Sistema de crenças")
-ax.fill(angles, values, 'b', alpha=0.1)
+ax.plot(angles, values, linewidth=1, linestyle='solid', label="Saberes locais")
+ax.fill(angles, values, 'b', alpha=0.1 )
 #
 # # Ind2
 # values = df.loc[1].drop('group').values.flatten().tolist()
