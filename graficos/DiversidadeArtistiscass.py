@@ -44,7 +44,7 @@ plt.ylim(0, 85)
 # Ind1
 values = df.loc[0].drop('group').values.flatten().tolist()
 values += values[:1]
-ax.plot(angles, values, linewidth=1, linestyle='solid', label="DiversidadeArtisticas")
+ax.plot(angles, values, linewidth=1, linestyle='solid', label="Diversidade Artísticas ")
 ax.fill(angles, values, 'b', alpha=0.1)
 #
 # # Ind2
