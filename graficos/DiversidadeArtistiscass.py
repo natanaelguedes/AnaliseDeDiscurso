@@ -1,3 +1,4 @@
+
 import matplotlib.pyplot as plt
 import pandas as pd
 from math import pi
@@ -5,8 +6,9 @@ from math import pi
 # Set data
 df = pd.DataFrame({
     'group': ['A', 'B', 'C', 'D'],
-    'Diversidade de rituais': [1,0,0,0],
-    'Formas de manifestações espirituais': [76,0,0,0]
+    'Artesanatos': [23,0,0,0],
+    'Cantos': [11,0,0,0],
+    'Danças':[10,0,0,0]
 })
 
 # ------- PART 1: Create background
@@ -42,7 +44,7 @@ plt.ylim(0, 85)
 # Ind1
 values = df.loc[0].drop('group').values.flatten().tolist()
 values += values[:1]
-ax.plot(angles, values, linewidth=1, linestyle='solid', label="Espiritualidade")
+ax.plot(angles, values, linewidth=1, linestyle='solid', label="DiversidadeArtisticas")
 ax.fill(angles, values, 'b', alpha=0.1)
 #
 # # Ind2
@@ -131,6 +133,6 @@ ax.fill(angles, values, 'b', alpha=0.1)
 
 # Add legend
 plt.legend(loc='right', bbox_to_anchor=(-0.10, 0.1))
-
+plt.title('Diversidade Artísticas\n')
 # Show the graph
 plt.show()

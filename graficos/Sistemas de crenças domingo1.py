@@ -5,9 +5,9 @@ from math import pi
 # Set data
 df = pd.DataFrame({
     'group': ['A', 'B', 'C', 'D'],
-    'Danças': [10,0,0,0],
-    'Cantos': [11, 0, 0, 0],
-    'Artesanatos': [23, 0, 0, 0]
+    'Diversidade de expressoes culturais artisticas': [23,0,0,0],
+    'Espiritualidade': [77, 0, 0, 0],
+    'Saberes locais': [82, 0, 0, 0]
 })
 
 # ------- PART 1: Create background
@@ -44,7 +44,8 @@ plt.ylim(0, 85)
 values = df.loc[0].drop('group').values.flatten().tolist()
 values += values[:1]
 ax.plot(angles, values, linewidth=1, linestyle='solid', label="Sistema de crenças")
-ax.fill(angles, values, 'b', alpha=0.1)
+ax.fill(angles, values, 'b', alpha=0.1 )
+plt.title("\nSistemas de crenças\n")
 #
 # # Ind2
 # values = df.loc[1].drop('group').values.flatten().tolist()
@@ -132,6 +133,6 @@ ax.fill(angles, values, 'b', alpha=0.1)
 
 # Add legend
 plt.legend(loc='right', bbox_to_anchor=(-0.10, 0.1))
-plt.title("Categoria e Subcategorias\n")
+
 # Show the graph
 plt.show()

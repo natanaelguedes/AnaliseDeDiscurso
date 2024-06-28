@@ -33,3 +33,13 @@ print("String\n" + wordstring +"\n")
 print("Lista\n" + str(wordlist) + "\n")
 print("Frequências\n" + str(wordfreq) + "\n")
 print("Pares\n" + str(list(zip(wordlist, wordfreq))))
+
+import pandas as pd
+from pandas import DataFrame
+
+
+# Crie um DataFrame de exemplo
+df = DataFrame({"Nome": [str(wordstring)]} , {"freq": [str(wordfreq)]})
+
+# Exporte o DataFrame para CSV
+df.to_csv('amostra.csv', index=False, encoding='utf-8')

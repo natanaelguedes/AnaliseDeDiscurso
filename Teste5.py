@@ -8,7 +8,7 @@ espiritualidade = ['Diversidade de rituais', 'Formas de manifestações espiritu
 sabereslocais=['Medicina indigena','Parteiras','rezadeiras/ benzedoras','Simbolos de proteção','Valorizacao da oralidade e saberes ancestrais','Valorizacao dos sinais da natureza']
 fig = go.Figure()
 fig.add_trace(go.Scatterpolar(
-    r=[20,11,10,30,50,60],
+    r=[20,11,10,30,30,30],
     theta=DiversidadeArtisticas,
     fill='toself',
     name='Diversidade de expressões culturais artisticas',
@@ -17,7 +17,7 @@ fig.add_trace(go.Scatterpolar(
 ))
 
 fig.add_trace(go.Scatterpolar(
-    r=[19,76,10,40,70,80],
+    r=[19,36,10,40,20,30],
     theta=espiritualidade,
     fill='toself',
     name='espiritualidade',
@@ -26,7 +26,7 @@ fig.add_trace(go.Scatterpolar(
 ))
 
 fig.add_trace(go.Scatterpolar(
-    r=[2,1,8,13,28,43],
+    r=[20,10,8,13,28,43],
     theta=sabereslocais,
     fill='toself',
     name='Saberes locais',
@@ -38,7 +38,7 @@ fig.update_layout(
     polar=dict(
         radialaxis=dict(
             visible=True,
-            range=[0, 80]
+            range=[0, 50]
         )),
     showlegend=True
 )

@@ -21,5 +21,5 @@ fig.update_layout(
     showlegend=True
 )
 
-
+plt.title("\nDiversidade Artísticas")
 fig.show()
