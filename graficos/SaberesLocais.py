@@ -136,6 +136,6 @@ plt.title("\nSaberes Locais\n")
 
 # Add legend
 plt.legend(loc='right', bbox_to_anchor=(-0.10, 0.1))
-
+plt.title('Aldeia Tabajara\n')
 # Show the graph
 plt.show()

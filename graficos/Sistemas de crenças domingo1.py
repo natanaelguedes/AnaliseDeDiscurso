@@ -45,7 +45,7 @@ values = df.loc[0].drop('group').values.flatten().tolist()
 values += values[:1]
 ax.plot(angles, values, linewidth=1, linestyle='solid', label="Sistema de crenças")
 ax.fill(angles, values, 'b', alpha=0.1 )
-plt.title("\nSistemas de crenças\n")
+plt.title("\nAldeia tabajaras\n")
 #
 # # Ind2
 # values = df.loc[1].drop('group').values.flatten().tolist()
