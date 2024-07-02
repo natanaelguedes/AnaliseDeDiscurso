@@ -6,7 +6,8 @@ from math import pi
 df = pd.DataFrame({
     'group': ['A', 'B', 'C', 'D'],
     'Diversidade de rituais': [1,0,0,0],
-    'Formas de manifestações espirituais': [76,0,0,0]
+    'Formas de manifestacoes espirituais': [76, 0, 0, 0]
+
 })
 
 # ------- PART 1: Create background
@@ -31,8 +32,8 @@ plt.xticks(angles[:-1], categories)
 
 # Draw ylabels
 ax.set_rlabel_position(0)
-plt.yticks([10, 20, 30,40,50,60,70], ["10", "20", "30","40","50","60","70"], color="grey", size=7)
-plt.ylim(0, 85)
+plt.yticks([10, 20, 30,40,50,60,70,80,90,100], ["10", "20", "30","40","50","60","70","80","94","100"], color="grey", size=7)
+plt.ylim(0, 78)
 
 # ------- PART 2: Add plots
 
@@ -131,6 +132,6 @@ ax.fill(angles, values, 'b', alpha=0.1)
 
 # Add legend
 plt.legend(loc='right', bbox_to_anchor=(-0.10, 0.1))
-plt.title('Aldeia Tabajara\n')
+plt.title("Aldeia Tabajaras\n")
 # Show the graph
 plt.show()
